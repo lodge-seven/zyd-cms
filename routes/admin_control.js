@@ -133,6 +133,10 @@ exports.index = function(f) {
 		f.data = {};
 	}
 	
+	if(f.arg.ord){
+		f.arg.ord = decodeURIComponent(f.arg.ord);
+	}
+	
 	//sqlite.close(db);
 	return f;
 }

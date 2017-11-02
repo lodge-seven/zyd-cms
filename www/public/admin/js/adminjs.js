@@ -146,7 +146,7 @@ function dehow(){
 //[选择删除
 
 function ord(name){
-location.href=ord_select+'ord='+name;
+location.href=ord_select+ 'ord=' + encodeURIComponent(encodeURIComponent(name));
  event.stopPropagation();
 
 }
